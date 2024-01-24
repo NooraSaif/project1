@@ -1,0 +1,197 @@
+  /* Google Form */
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+
+  *{  
+    margin: 0;
+    padding: 0;
+  }
+  
+  body{
+    font-family: 'Lato', sans-serif;
+  }
+  
+  
+  a {
+    text-decoration: none;
+  }
+  
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Start Header */
+  .header {
+    background-color: white;
+    box-shadow: 0px 8px 12px #cfcccc;
+  }
+  
+  .header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 75px;
+  }
+  
+  .header .logo {
+    color: #0a2793;
+    font-size: 20px;
+    font-weight: 800;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .header .links {
+    position: relative;
+  }
+  
+  .header .links .menu {
+    color: #0a2793;
+    font-size: 35px;
+  }
+  
+  .header .links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    position: absolute;
+    right: 6px;
+    min-width: 267px;
+    top: calc(100% + 15px);
+    display: none;
+    z-index: 1;
+    box-shadow: 1px 1px 3px #b3b3b3;
+    border-radius: 6px;
+  }
+  
+  .header .links ul::before {
+    content: "";
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #0a2793 transparent;
+    position: absolute;
+    right: 5px;
+    top: -20px;
+  }
+  
+  .header .links:hover ul {
+    display: block;
+  }
+  
+  .header .links ul li a {
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .header .links ul li a:hover {
+    padding-left: 25px;
+  }
+  /* End Header */
+  
+  /* Start Services */
+  .Services {
+    padding-top: 40px;
+    min-height: calc(100vh - 145px);
+    background-color: #f9f9f9bd
+  }
+  
+  .Services .text {
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .Services .text h2 {
+    color: #4072af;
+    font-size: 37px;
+    font-weight: 800;
+    font-family: system-ui;
+    text-align: center;
+  }
+  
+  .Services .container {
+    padding: 10px 0;
+    margin: 10px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 280px);
+    gap: 40px;
+  }
+  
+  .Services .container .box {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 10%);
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .Services .container .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 2px 15px rgb(0 0 0 / 20%);
+  }
+  
+  .Services .container .box img {
+    width: 100%;
+    height: 215px;
+  }
+  
+  .Services .container .box .content {
+    padding: 20px;
+  }
+  
+  .Services .container .box .content h3 {
+    margin: 0;
+  }
+  
+  .Services .container .box .content p {
+    margin: 10px 0 0;
+    line-height: 1.5;
+    color: #777;
+  }
+  
+  .Services .container .box .info {
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  
+  .Services .container .box .info .button-book{
+    background-color: #457abb;
+    border-radius: 100px;
+    padding: 5px 10px;
+    border: unset;
+  }
+  
+  .Services .container .box .info a {
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+  }
+  /* End Services */
+  
+  /* ---Small Screen--- */
+  @media only screen and (max-width: 740px) {
+    .Services .container {
+      grid-template-columns: repeat(1, 260px);
+      gap: 25px;
+    }
+  
+    .Services .container .box img {
+      width: 100%;
+      height: auto;
+    }
+  
+    .header .container {
+      padding: 0 30px;
+    }
+    .Services .text h2 {
+      font-size: 25px;
+    }
+  }
