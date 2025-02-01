@@ -5,7 +5,7 @@
 
 **Project Title:** A web app for booking discussion rooms and auditorium at the college.
 
-**Feactures:**
+**Features:**
 - Calendar booking system to streamline scheduling.
 - Authentication Page
 - Booking History
